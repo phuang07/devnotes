@@ -1,0 +1,74 @@
+# Project information
+site_name: 'Development Docs'
+site_description: 'A Material Design theme for MkDocs'
+site_author: 'Martin Donath'
+
+# Repository
+repo_url: https://github.com/leoman730/devdocs
+repo_name: Github
+remote_branch: gh-pages
+
+
+# Copyright
+copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
+
+# Configuration
+theme:
+    name: material
+    language: 'en'
+    include_sidebar: true
+    palette:
+        primary: 'Green'
+        accent: 'indigo'
+    font:
+        text: 'Ubuntu'
+        code: 'Ubuntu Mono'
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/squidfunk'
+    - type: 'twitter'
+      link: 'https://twitter.com/squidfunk'
+    - type: 'linkedin'
+      link: 'https://linkedin.com/in/squidfunk'
+
+# Google Analytics
+google_analytics:
+    - 'UA-XXXXXXXX-X'
+    - 'auto'
+
+# Extensions
+markdown_extensions:
+    - smarty
+    - admonition
+    - footnotes
+    - meta
+    - codehilite:
+        guess_lang: false
+    - toc:
+        permalink: true
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences
+    - pymdownx.tasklist:
+        custom_checkbox: true
+    - pymdownx.tilde
+
+docs_dir: docs
+
+dev_addr: '127.0.0.1:8181'
+
+plugins:
+    - search
