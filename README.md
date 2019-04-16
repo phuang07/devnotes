@@ -1,5 +1,5 @@
 # Notes for Web Application Development
 
-devnotes.elab.io
+https://devnotes.elab.io
 
 
