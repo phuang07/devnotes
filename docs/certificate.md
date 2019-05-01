@@ -1,4 +1,4 @@
-# Certication
+# SSL 
 
 ## Let's encrypt
 ```
