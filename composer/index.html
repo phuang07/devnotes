@@ -13,7 +13,7 @@
         <meta name="description" content="A collection of notes about modern web develoment and practices.">
       
       
-        <link rel="canonical" href="http://devnote.elab.io/question/">
+        <link rel="canonical" href="http://devnote.elab.io/composer/">
       
       
         <meta name="author" content="Patrick Ray. Huang">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Questions - Development Notes</title>
+        <title>Composer - Development Notes</title>
       
     
     
@@ -133,7 +133,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#questions" tabindex="1" class="md-skip">
+      <a href="#composer" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -158,7 +158,7 @@
               Development Notes
             </span>
             <span class="md-header-nav__topic">
-              Questions
+              Composer
             </span>
           
         </div>
@@ -290,11 +290,49 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../composer/" title="Composer" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Composer
+      </label>
+    
+    <a href="./" title="Composer" class="md-nav__link md-nav__link--active">
       Composer
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" title="Troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -362,20 +400,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Questions" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../question/" title="Questions" class="md-nav__link">
       Questions
     </a>
-    
   </li>
 
     
@@ -420,6 +449,22 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" title="Troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -430,10 +475,44 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/phuang07/devnotes/edit/master/docs/question.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/phuang07/devnotes/edit/master/docs/composer.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="questions">Questions<a class="headerlink" href="#questions" title="Permanent link">&para;</a></h1>
+                <h1 id="composer">Composer<a class="headerlink" href="#composer" title="Permanent link">&para;</a></h1>
+<h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Can not delete files</p>
+<div class="codehilite"><pre><span></span>[RuntimeException]
+Could not delete web/core/modules/layout_builder/tests/modules/layout_builder_test/src/Plugin/Layout/LayoutBuilderTestPlugin.php:
+</pre></div>
+
+<p>This is related to file ownership, see <a href="https://stackoverflow.com/questions/26216437/error-could-not-delete-with-composer-on-vagrant/46277405#46277405">Error “could not delete” with Composer on Vagrant</a>. Change ownership using <code>chown owner:owner -R .</code></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Out of memory</p>
+<div class="codehilite"><pre><span></span>Fatal error: Allowed memory size of 1610612736 bytes exhausted (tried to allocate 23124288 bytes) in phar:///usr/local/bin/composer/src/Composer/Util/RemoteFilesystem.php on line 458   
+</pre></div>
+
+<p>Increase php memory limit. </p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Package depenency issue</p>
+<div class="codehilite"><pre><span></span>Your requirements could not be resolved to an installable set of packages.
+
+Problem 1
+    - Installation request for sebastian/diff (locked at 2.0.1) -&gt; satisfiable by sebastian/diff[2.0.1].
+    - phpunit/phpunit 7.0.0 requires sebastian/diff ^3.0 -&gt; satisfiable by sebastian/diff[3.0.0].
+    - phpunit/phpunit 7.0.1 requires sebastian/diff ^3.0 -&gt; satisfiable by sebastian/diff[3.0.0].
+    - phpunit/phpunit 7.0.2 requires sebastian/diff ^3.0 -&gt; satisfiable by sebastian/diff[3.0.0].
+    - Conclusion: don&#39;t install sebastian/diff 3.0.0
+    - Installation request for phpunit/phpunit ^7 -&gt; satisfiable by phpunit/phpunit[7.0.0, 7.0.1, 7.0.2].
+</pre></div>
+
+<div class="codehilite"><pre><span></span>$ composer remove phpunit/phpunit --dev
+$ composer require phpunit/phpunit --dev
+</pre></div>
+
+</div>
                 
                   
                 
@@ -454,7 +533,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../k8/" title="K8" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../certificate/" title="SSL" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -463,19 +542,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                K8
+                SSL
               </span>
             </div>
           </a>
         
         
-          <a href="../task_runner/" title="Task Runner" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../design_system/" title="Design System" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Task Runner
+                Design System
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
