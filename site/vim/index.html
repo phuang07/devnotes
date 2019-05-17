@@ -10,11 +10,13 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="A Material Design theme for MkDocs">
+        <meta name="description" content="A collection of notes about modern web develoment and practices.">
       
       
+        <link rel="canonical" href="http://devnote.elab.io/vim/">
       
-        <meta name="author" content="Martin Donath">
+      
+        <meta name="author" content="Patrick Ray. Huang">
       
       
         <meta name="lang:clipboard.copy" content="Copy to clipboard">
@@ -40,7 +42,7 @@
     
     
       
-        <title>Vim - Development Docs</title>
+        <title>Vim - Development Notes</title>
       
     
     
@@ -140,7 +142,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href=".." title="Development Docs" class="md-header-nav__button md-logo">
+        <a href="http://devnote.elab.io" title="Development Notes" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -153,7 +155,7 @@
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             <span class="md-header-nav__topic">
-              Development Docs
+              Development Notes
             </span>
             <span class="md-header-nav__topic">
               Vim
@@ -197,7 +199,7 @@
 
   
 
-<a href="https://github.com/leoman730/devdocs/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/phuang07/devnotes/" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -206,7 +208,7 @@
     </div>
   
   <div class="md-source__repository">
-    Github
+    devnotes
   </div>
 </a>
           </div>
@@ -230,12 +232,12 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href=".." title="Development Docs" class="md-nav__button md-logo">
+    <a href="http://devnote.elab.io" title="Development Notes" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
     </a>
-    Development Docs
+    Development Notes
   </label>
   
     <div class="md-nav__source">
@@ -244,7 +246,7 @@
 
   
 
-<a href="https://github.com/leoman730/devdocs/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/phuang07/devnotes/" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -253,7 +255,7 @@
     </div>
   
   <div class="md-source__repository">
-    Github
+    devnotes
   </div>
 </a>
     </div>
@@ -278,8 +280,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../certificate/" title="Certication" class="md-nav__link">
-      Certication
+    <a href="../certificate/" title="SSL" class="md-nav__link">
+      SSL
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../composer/" title="Composer" class="md-nav__link">
+      Composer
     </a>
   </li>
 
@@ -292,6 +306,42 @@
   <li class="md-nav__item">
     <a href="../design_system/" title="Design System" class="md-nav__link">
       Design System
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../drupal/" title="Drupal" class="md-nav__link">
+      Drupal
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ffmpeg/" title="FFMPEG" class="md-nav__link">
+      FFMPEG
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../git/" title="Git" class="md-nav__link">
+      Git
     </a>
   </li>
 
@@ -316,6 +366,18 @@
   <li class="md-nav__item">
     <a href="../question/" title="Questions" class="md-nav__link">
       Questions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../task_runner/" title="Task Runner" class="md-nav__link">
+      Task Runner
     </a>
   </li>
 
@@ -384,6 +446,13 @@
           <li class="md-nav__item">
   <a href="#surround" title="Surround" class="md-nav__link">
     Surround
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syntastic" title="Syntastic" class="md-nav__link">
+    Syntastic
   </a>
   
 </li>
@@ -460,6 +529,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#syntastic" title="Syntastic" class="md-nav__link">
+    Syntastic
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -481,7 +557,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/leoman730/devdocs/edit/master/docs/vim.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/phuang07/devnotes/edit/master/docs/vim.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="vim">Vim<a class="headerlink" href="#vim" title="Permanent link">&para;</a></h1>
@@ -567,6 +643,25 @@
 </tr>
 </tbody>
 </table>
+<h3 id="syntastic">Syntastic<a class="headerlink" href="#syntastic" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:SyntasticToggleMode</td>
+<td>Toggle Syntastic into passive mode, which will disable auto-checking.</td>
+</tr>
+<tr>
+<td>:SyntasticCheck</td>
+<td>Enable SyntasticCheck</td>
+</tr>
+</tbody>
+</table>
 <p>Resources:
 <a href="http://www.futurile.net/2016/03/19/vim-surround-plugin-tutorial/">Vim surround plugin tutorial</a></p>
                 
@@ -589,7 +684,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../question/" title="Questions" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../task_runner/" title="Task Runner" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -598,7 +693,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Questions
+                Task Runner
               </span>
             </div>
           </a>
@@ -611,10 +706,6 @@
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-          <div class="md-footer-copyright__highlight">
-            Copyright &copy; 2016 - 2017 Martin Donath
-          </div>
-        
         powered by
         <a href="https://www.mkdocs.org">MkDocs</a>
         and
@@ -625,11 +716,9 @@
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
-      <a href="https://github.com/squidfunk" class="md-footer-social__link fa fa-github"></a>
+      <a href="https://github.com/phuang07" class="md-footer-social__link fa fa-github"></a>
     
-      <a href="https://twitter.com/squidfunk" class="md-footer-social__link fa fa-twitter"></a>
-    
-      <a href="https://linkedin.com/in/squidfunk" class="md-footer-social__link fa fa-linkedin"></a>
+      <a href="https://twitter.com/phuang07" class="md-footer-social__link fa fa-twitter"></a>
     
   </div>
 

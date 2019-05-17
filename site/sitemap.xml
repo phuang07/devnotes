@@ -1,33 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>None</loc>
-     <lastmod>2019-04-16</lastmod>
+     <loc>http://devnote.elab.io/</loc>
+     <lastmod>2019-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2019-04-16</lastmod>
+     <loc>http://devnote.elab.io/certificate/</loc>
+     <lastmod>2019-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2019-04-16</lastmod>
+     <loc>http://devnote.elab.io/composer/</loc>
+     <lastmod>2019-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2019-04-16</lastmod>
+     <loc>http://devnote.elab.io/design_system/</loc>
+     <lastmod>2019-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2019-04-16</lastmod>
+     <loc>http://devnote.elab.io/drupal/</loc>
+     <lastmod>2019-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2019-04-16</lastmod>
+     <loc>http://devnote.elab.io/ffmpeg/</loc>
+     <lastmod>2019-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://devnote.elab.io/git/</loc>
+     <lastmod>2019-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://devnote.elab.io/k8/</loc>
+     <lastmod>2019-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://devnote.elab.io/question/</loc>
+     <lastmod>2019-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://devnote.elab.io/task_runner/</loc>
+     <lastmod>2019-05-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://devnote.elab.io/vim/</loc>
+     <lastmod>2019-05-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
