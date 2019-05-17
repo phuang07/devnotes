@@ -35,5 +35,13 @@ Objective   | Original | Command | Edited Text |
 Wrap line with symbol | Hello World! | ys$' | 'Hello World' |
 
 
+### Syntastic
+
+Command   | Description 
+--------------------|--------------------
+:SyntasticToggleMode |  Toggle Syntastic into passive mode, which will disable auto-checking.
+:SyntasticCheck | Enable SyntasticCheck
+
+
 Resources:
 [Vim surround plugin tutorial](http://www.futurile.net/2016/03/19/vim-surround-plugin-tutorial/)

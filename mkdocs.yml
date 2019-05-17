@@ -1,16 +1,13 @@
 # Project information
-site_name: 'Development Docs'
-site_description: 'A Material Design theme for MkDocs'
-site_author: 'Martin Donath'
+site_name: 'Development Notes'
+site_description: 'A collection of notes about modern web develoment and practices.'
+site_author: 'Patrick Ray. Huang'
+site_url: http://devnote.elab.io
 
 # Repository
-repo_url: https://github.com/leoman730/devdocs
-repo_name: Github
+repo_url: https://github.com/phuang07/devnotes
+repo_name: devnotes
 remote_branch: gh-pages
-
-
-# Copyright
-copyright: 'Copyright &copy; 2016 - 2017 Martin Donath'
 
 # Configuration
 theme:
@@ -28,11 +25,11 @@ theme:
 extra:
   social:
     - type: 'github'
-      link: 'https://github.com/squidfunk'
+      link: 'https://github.com/phuang07'
     - type: 'twitter'
-      link: 'https://twitter.com/squidfunk'
-    - type: 'linkedin'
-      link: 'https://linkedin.com/in/squidfunk'
+      link: 'https://twitter.com/phuang07'
+    # - type: 'linkedin'
+    #   link: 'https://linkedin.com/in/squidfunk'
 
 # Google Analytics
 google_analytics:
