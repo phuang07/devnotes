@@ -13,7 +13,7 @@
         <meta name="description" content="A collection of notes about modern web develoment and practices.">
       
       
-        <link rel="canonical" href="http://devnote.elab.io/task_runner/">
+        <link rel="canonical" href="http://devnote.elab.io/node/">
       
       
         <meta name="author" content="Patrick Ray. Huang">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Task Runner - Development Notes</title>
+        <title>Node - Development Notes</title>
       
     
     
@@ -133,7 +133,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#task-runner" tabindex="1" class="md-skip">
+      <a href="#node" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -158,7 +158,7 @@
               Development Notes
             </span>
             <span class="md-header-nav__topic">
-              Task Runner
+              Node
             </span>
           
         </div>
@@ -374,11 +374,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../node/" title="Node" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Node" class="md-nav__link md-nav__link--active">
       Node
     </a>
+    
   </li>
 
     
@@ -398,49 +407,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Task Runner
-      </label>
-    
-    <a href="./" title="Task Runner" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../task_runner/" title="Task Runner" class="md-nav__link">
       Task Runner
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#references" title="References" class="md-nav__link">
-    References
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -473,22 +444,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#references" title="References" class="md-nav__link">
-    References
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -499,19 +454,22 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/phuang07/devnotes/edit/master/docs/task_runner.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/phuang07/devnotes/edit/master/docs/node.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="task-runner">Task Runner<a class="headerlink" href="#task-runner" title="Permanent link">&para;</a></h1>
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-better">https://www.toptal.com/front-end/webpack-browserify-gulp-which-is-better</a></li>
-<li><a href="https://laracasts.com/series/webpack-for-everyone">https://laracasts.com/series/webpack-for-everyone</a></li>
-<li><a href="https://gist.github.com/alexej-d/4b45b5ff1f7ea6ff4e8f9cea7d14e48c">https://gist.github.com/alexej-d/4b45b5ff1f7ea6ff4e8f9cea7d14e48c</a></li>
-<li><a href="https://pnwdrupalsummit.org/2018/sessions/webpack-es6-pattern-lab-and-drupal-8-hands-design-system-first-development">https://pnwdrupalsummit.org/2018/sessions/webpack-es6-pattern-lab-and-drupal-8-hands-design-system-first-development</a></li>
-<li><a href="https://phase2.gitbook.io/frontend/">https://phase2.gitbook.io/frontend/</a></li>
-<li><a href="https://github.com/phase2/particle">https://github.com/phase2/particle</a></li>
-</ul>
+                <h1 id="node">Node<a class="headerlink" href="#node" title="Permanent link">&para;</a></h1>
+<p>Install specific version of node on Mac
+<div class="codehilite"><pre><span></span>## Install node v8
+brew search node
+
+brew unlink node
+brew uninstall node
+
+brew install node@8
+brew link node@8
+
+Then add binary to $PATH
+</pre></div></p>
                 
                   
                 
@@ -532,7 +490,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../question/" title="Questions" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../k8/" title="K8" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -541,19 +499,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Questions
+                K8
               </span>
             </div>
           </a>
         
         
-          <a href="../vim/" title="Vim" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../question/" title="Questions" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Vim
+                Questions
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
